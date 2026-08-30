@@ -1,13 +1,78 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Cheat the Rich Records</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #050505;
+      color: #f5f1e6;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      display: block;
+      width: min(100%, 1100px);
+      height: auto;
+      margin: 0 auto;
+    }
+
+    .tagline {
+      margin: 28px 0 0;
+      font-size: clamp(16px, 2vw, 22px);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 24px 12px;
+      }
+
+      .tagline {
+        margin-top: 20px;
+        font-size: 14px;
+        letter-spacing: 0.08em;
+      }
+    }
+  </style>
 </head>
 
 <body>
-  <h1>CHEAT THE RICH RECORDS</h1>
-  <p>Different stories. One attitude.</p>
+
+  <main class="hero">
+
+    <img
+      class="logo"
+      src="CTRbannerlogo.png"
+      alt="Cheat the Rich Records"
+    >
+
+    <p class="tagline">
+      Different stories. One attitude.
+    </p>
+
+  </main>
+
 </body>
 </html>
