@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,13 +19,17 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
+    body {
+      line-height: 1.5;
+    }
+
     .hero {
-      min-height: 100vh;
+      min-height: 72vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 30px 20px;
+      padding: 40px 20px 30px;
       text-align: center;
     }
 
@@ -38,21 +41,96 @@
     }
 
     .tagline {
-      margin: 28px 0 0;
-      font-size: clamp(16px, 2vw, 22px);
+      margin: 26px 0 0;
+      font-size: clamp(15px, 2vw, 21px);
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
 
+    .releases {
+      width: min(1200px, 100%);
+      margin: 0 auto;
+      padding: 20px 24px 70px;
+    }
+
+    .section-title {
+      margin: 0 0 28px;
+      text-align: center;
+      font-size: clamp(28px, 4vw, 42px);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .release-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 34px 24px;
+    }
+
+    .release-card {
+      text-align: center;
+    }
+
+    .release-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #111;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      transition: transform 0.2s ease;
+    }
+
+    .release-card img:hover {
+      transform: scale(1.02);
+    }
+
+    .song-title {
+      margin: 14px 0 4px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .artist-name {
+      margin: 0;
+      color: #b7b2a8;
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .release-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
     @media (max-width: 600px) {
       .hero {
-        padding: 24px 12px;
+        min-height: 48vh;
+        padding: 28px 12px 20px;
       }
 
       .tagline {
-        margin-top: 20px;
-        font-size: 14px;
+        margin-top: 18px;
+        font-size: 13px;
         letter-spacing: 0.08em;
+      }
+
+      .releases {
+        padding: 10px 14px 50px;
+      }
+
+      .release-grid {
+        gap: 26px 14px;
+      }
+
+      .song-title {
+        font-size: 14px;
+      }
+
+      .artist-name {
+        font-size: 13px;
       }
     }
   </style>
@@ -60,7 +138,7 @@
 
 <body>
 
-  <main class="hero">
+  <header class="hero">
 
     <img
       class="logo"
@@ -71,6 +149,68 @@
     <p class="tagline">
       Different stories. One attitude.
     </p>
+
+  </header>
+
+  <main>
+
+    <section class="releases">
+
+      <h2 class="section-title">Releases</h2>
+
+      <div class="release-grid">
+
+        <article class="release-card">
+          <img src="images/Happy-Mount-Park-Police.jpg" alt="Happy Mount Park Police">
+          <h3 class="song-title">Happy Mount Park Police</h3>
+          <p class="artist-name">The Morecambe Beach</p>
+        </article>
+
+        <article class="release-card">
+          <img src="images/Dirt-Cheap-Monday.jpg" alt="Dirt Cheap Monday">
+          <h3 class="song-title">Dirt Cheap Monday</h3>
+          <p class="artist-name">The Pubstitutes</p>
+        </article>
+
+        <article class="release-card">
+          <img src="images/Paradise-of-Vice.jpg" alt="Paradise of Vice">
+          <h3 class="song-title">Paradise of Vice</h3>
+          <p class="artist-name">Zipshaft</p>
+        </article>
+
+        <article class="release-card">
+          <img src="images/Venus-Mantrap.jpg" alt="Venus Mantrap">
+          <h3 class="song-title">Venus Mantrap</h3>
+          <p class="artist-name">JunkBerry</p>
+        </article>
+
+        <article class="release-card">
+          <img src="images/Firebeast.jpg" alt="Firebeast">
+          <h3 class="song-title">Firebeast</h3>
+          <p class="artist-name">RUSTYNAILZ</p>
+        </article>
+
+        <article class="release-card">
+          <img src="images/No-Brake.jpg" alt="No Brake Keine Bremsen">
+          <h3 class="song-title">No Brake // Keine Bremsen</h3>
+          <p class="artist-name">Der Autobahn Aggro</p>
+        </article>
+
+        <article class="release-card">
+          <img src="images/Holidays-In-The-Rain.jpg" alt="Holidays in the Rain">
+          <h3 class="song-title">Holidays in the Rain</h3>
+          <p class="artist-name">The Morecambe Beach</p>
+        </article>
+
+        <article class="release-card">
+          <img src="images/Big-Kick.jpg" alt="Big Kick">
+          <h3 class="song-title">Big Kick</h3>
+          <p class="artist-name">The Pubstitutes</p>
+        </article>
+
+      </div>
+
+    </section>
 
   </main>
 
