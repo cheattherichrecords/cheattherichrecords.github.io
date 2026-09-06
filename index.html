@@ -23,14 +23,14 @@
       line-height: 1.5;
     }
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 20px 10px;
-  text-align: center;
-}
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 20px 10px;
+      text-align: center;
+    }
 
     .logo {
       display: block;
@@ -40,7 +40,7 @@
     }
 
     .tagline {
-      margin: 26px 0 0;
+      margin: 10px 0 0;
       font-size: clamp(15px, 2vw, 21px);
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -70,6 +70,12 @@
       text-align: center;
     }
 
+    .release-card a {
+      display: block;
+      color: inherit;
+      text-decoration: none;
+    }
+
     .release-card img {
       display: block;
       width: 100%;
@@ -78,6 +84,7 @@
       background: #111;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
       transition: transform 0.2s ease;
+      cursor: pointer;
     }
 
     .release-card img:hover {
@@ -106,12 +113,11 @@
 
     @media (max-width: 600px) {
       .hero {
-        min-height: 48vh;
-        padding: 28px 12px 20px;
+        padding: 15px 12px 10px;
       }
 
       .tagline {
-        margin-top: 18px;
+        margin-top: 10px;
         font-size: 13px;
         letter-spacing: 0.08em;
       }
@@ -160,49 +166,65 @@
       <div class="release-grid">
 
         <article class="release-card">
-          <img src="images/Happy-Mount-Park-Police.jpg" alt="Happy Mount Park Police">
+          <a href="https://distrokid.com/hyperfollow/themorecambebeach/happy-mount-park-police?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/Happy-Mount-Park-Police.jpg" alt="Happy Mount Park Police">
+          </a>
           <h3 class="song-title">Happy Mount Park Police</h3>
           <p class="artist-name">The Morecambe Beach</p>
         </article>
 
         <article class="release-card">
-          <img src="images/Dirt-Cheap-Monday.jpg" alt="Dirt Cheap Monday">
+          <a href="https://distrokid.com/hyperfollow/thepubstitutes/dirt-cheap-monday?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/Dirt-Cheap-Monday.jpg" alt="Dirt Cheap Monday">
+          </a>
           <h3 class="song-title">Dirt Cheap Monday</h3>
           <p class="artist-name">The Pubstitutes</p>
         </article>
 
         <article class="release-card">
-          <img src="images/Paradise-of-Vice.jpg" alt="Paradise of Vice">
+          <a href="https://distrokid.com/hyperfollow/zipshaft/paradise-of-vice?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/Paradise-of-Vice.jpg" alt="Paradise of Vice">
+          </a>
           <h3 class="song-title">Paradise of Vice</h3>
           <p class="artist-name">Zipshaft</p>
         </article>
 
         <article class="release-card">
-          <img src="images/Venus-Mantrap.jpg" alt="Venus Mantrap">
+          <a href="https://distrokid.com/hyperfollow/junkberry/venus-mantrap-2?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/Venus-Mantrap.jpg" alt="Venus Mantrap">
+          </a>
           <h3 class="song-title">Venus Mantrap</h3>
           <p class="artist-name">JunkBerry</p>
         </article>
 
         <article class="release-card">
-          <img src="images/Firebeast.jpg" alt="Firebeast">
+          <a href="https://distrokid.com/hyperfollow/rustynailz/firebeast?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/Firebeast.jpg" alt="Firebeast">
+          </a>
           <h3 class="song-title">Firebeast</h3>
           <p class="artist-name">RUSTYNAILZ</p>
         </article>
 
         <article class="release-card">
-          <img src="images/No-Brake.jpg" alt="No Brake Keine Bremsen">
+          <a href="https://distrokid.com/hyperfollow/derautobahnaggro/no-brake--keine-bremsen?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/No-Brake.jpg" alt="No Brake Keine Bremsen">
+          </a>
           <h3 class="song-title">No Brake // Keine Bremsen</h3>
           <p class="artist-name">Der Autobahn Aggro</p>
         </article>
 
         <article class="release-card">
-          <img src="images/Holidays-In-The-Rain.jpg" alt="Holidays in the Rain">
+          <a href="https://distrokid.com/hyperfollow/themorecambebeach/holidays-in-the-rain?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/Holidays-In-The-Rain.jpg" alt="Holidays in the Rain">
+          </a>
           <h3 class="song-title">Holidays in the Rain</h3>
           <p class="artist-name">The Morecambe Beach</p>
         </article>
 
         <article class="release-card">
-          <img src="images/Big-Kick.jpg" alt="Big Kick">
+          <a href="https://distrokid.com/hyperfollow/thepubstitutes/big-kick?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/Big-Kick.jpg" alt="Big Kick">
+          </a>
           <h3 class="song-title">Big Kick</h3>
           <p class="artist-name">The Pubstitutes</p>
         </article>
