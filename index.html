@@ -49,7 +49,7 @@
     .releases {
       width: min(1200px, 100%);
       margin: 0 auto;
-      padding: 20px 24px 70px;
+      padding: 20px 24px 40px;
     }
 
     .section-title {
@@ -105,6 +105,58 @@
       font-size: 14px;
     }
 
+    .youtube-section {
+      text-align: center;
+      padding: 10px 20px 30px;
+    }
+
+    .youtube-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    .youtube-icon {
+      width: 42px;
+      height: 30px;
+      background: #ff0000;
+      border-radius: 7px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .youtube-icon::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 12px solid white;
+      margin-left: 3px;
+    }
+
+    .youtube-link:hover {
+      opacity: 0.85;
+    }
+
+    .skull-section {
+      text-align: center;
+      padding: 5px 20px 45px;
+    }
+
+    .skull-logo {
+      width: min(220px, 50vw);
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
     @media (max-width: 900px) {
       .release-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -123,7 +175,7 @@
       }
 
       .releases {
-        padding: 10px 14px 50px;
+        padding: 10px 14px 35px;
       }
 
       .release-grid {
@@ -136,6 +188,19 @@
 
       .artist-name {
         font-size: 13px;
+      }
+
+      .youtube-link {
+        font-size: 15px;
+      }
+
+      .youtube-icon {
+        width: 36px;
+        height: 26px;
+      }
+
+      .skull-logo {
+        width: min(180px, 55vw);
       }
     }
   </style>
@@ -166,19 +231,19 @@
       <div class="release-grid">
 
         <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/themorecambebeach/happy-mount-park-police?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/Happy-Mount-Park-Police.jpg" alt="Happy Mount Park Police">
-          </a>
-          <h3 class="song-title">Happy Mount Park Police</h3>
-          <p class="artist-name">The Morecambe Beach</p>
-        </article>
-
-        <article class="release-card">
           <a href="https://distrokid.com/hyperfollow/thepubstitutes/dirt-cheap-monday?ref=release" target="_blank" rel="noopener noreferrer">
             <img src="images/Dirt-Cheap-Monday.jpg" alt="Dirt Cheap Monday">
           </a>
           <h3 class="song-title">Dirt Cheap Monday</h3>
           <p class="artist-name">The Pubstitutes</p>
+        </article>
+
+        <article class="release-card">
+          <a href="https://distrokid.com/hyperfollow/themorecambebeach/happy-mount-park-police?ref=release" target="_blank" rel="noopener noreferrer">
+            <img src="images/Happy-Mount-Park-Police.jpg" alt="Happy Mount Park Police">
+          </a>
+          <h3 class="song-title">Happy Mount Park Police</h3>
+          <p class="artist-name">The Morecambe Beach</p>
         </article>
 
         <article class="release-card">
@@ -230,19 +295,29 @@
         </article>
 
       </div>
-    
+
     </section>
 
-    <div style="text-align:center; padding: 0 20px 55px;">
-      <a href="https://youtube.com/@cheattherichrecords"
-         target="_blank"
-         rel="noopener noreferrer"
-         style="color:#f5f1e6; text-decoration:none; font-weight:bold; letter-spacing:0.08em;">
-        WATCH MORE ON YOUTUBE →
+    <section class="youtube-section">
+      <a
+        class="youtube-link"
+        href="https://www.youtube.com/@cheattherichrecords"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="youtube-icon"></span>
+        WATCH MORE ON YOUTUBE
       </a>
-    
-    </div>
-    
+    </section>
+
+    <section class="skull-section">
+      <img
+        class="skull-logo"
+        src="CTR-SkullLogo.png"
+        alt="Cheat the Rich Records Skull Logo"
+      >
+    </section>
+
   </main>
 
 </body>
