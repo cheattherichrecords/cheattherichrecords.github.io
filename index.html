@@ -7,6 +7,7 @@
   <title>Cheat the Rich Records</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -22,6 +23,11 @@
     body {
       line-height: 1.5;
     }
+
+
+    /* =========================
+       TOP / LOGO
+       ========================= */
 
     .hero {
       display: flex;
@@ -45,6 +51,11 @@
       letter-spacing: 0.12em;
       text-transform: uppercase;
     }
+
+
+    /* =========================
+       RELEASES
+       ========================= */
 
     .releases {
       width: min(1200px, 100%);
@@ -105,6 +116,11 @@
       font-size: 14px;
     }
 
+
+    /* =========================
+       YOUTUBE
+       ========================= */
+
     .youtube-section {
       text-align: center;
       padding: 10px 20px 30px;
@@ -145,9 +161,14 @@
       opacity: 0.85;
     }
 
+
+    /* =========================
+       CTR SKULL / INTRO
+       ========================= */
+
     .skull-section {
       text-align: center;
-      padding: 5px 20px 45px;
+      padding: 5px 20px 55px;
     }
 
     .skull-logo {
@@ -157,13 +178,62 @@
       margin: 0 auto;
     }
 
+    .ctr-intro {
+      max-width: 760px;
+      margin: 24px auto 0;
+      text-align: center;
+    }
+
+    .ctr-established {
+      margin: 0 0 14px;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      color: #f5f1e6;
+    }
+
+    .ctr-motto {
+      margin: 0 0 20px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #f5f1e6;
+    }
+
+    .ctr-world {
+      margin: 0 0 12px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #b7b2a8;
+    }
+
+    .ctr-reality {
+      margin: 0;
+      font-size: 17px;
+      font-weight: 700;
+      font-style: italic;
+      color: #f5f1e6;
+    }
+
+
+    /* =========================
+       TABLET
+       ========================= */
+
     @media (max-width: 900px) {
+
       .release-grid {
         grid-template-columns: repeat(2, 1fr);
       }
+
     }
 
+
+    /* =========================
+       MOBILE
+       ========================= */
+
     @media (max-width: 600px) {
+
       .hero {
         padding: 15px 12px 10px;
       }
@@ -202,11 +272,37 @@
       .skull-logo {
         width: min(180px, 55vw);
       }
+
+      .ctr-intro {
+        margin-top: 20px;
+      }
+
+      .ctr-established {
+        font-size: 13px;
+      }
+
+      .ctr-motto {
+        font-size: 16px;
+      }
+
+      .ctr-world {
+        font-size: 14px;
+      }
+
+      .ctr-reality {
+        font-size: 15px;
+      }
+
     }
+
   </style>
 </head>
 
+
 <body>
+
+
+  <!-- TOP -->
 
   <header class="hero">
 
@@ -222,103 +318,307 @@
 
   </header>
 
+
   <main>
+
+
+    <!-- RELEASES -->
 
     <section class="releases">
 
-      <h2 class="section-title">Releases</h2>
+      <h2 class="section-title">
+        Releases
+      </h2>
+
 
       <div class="release-grid">
 
-        <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/thepubstitutes/dirt-cheap-monday?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/Dirt-Cheap-Monday.jpg" alt="Dirt Cheap Monday">
-          </a>
-          <h3 class="song-title">Dirt Cheap Monday</h3>
-          <p class="artist-name">The Pubstitutes</p>
-        </article>
+
+        <!-- DIRT CHEAP MONDAY -->
 
         <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/themorecambebeach/happy-mount-park-police?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/Happy-Mount-Park-Police.jpg" alt="Happy Mount Park Police">
+
+          <a
+            href="https://distrokid.com/hyperfollow/thepubstitutes/dirt-cheap-monday?ref=release"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/Dirt-Cheap-Monday.jpg"
+              alt="Dirt Cheap Monday"
+            >
+
           </a>
-          <h3 class="song-title">Happy Mount Park Police</h3>
-          <p class="artist-name">The Morecambe Beach</p>
+
+          <h3 class="song-title">
+            Dirt Cheap Monday
+          </h3>
+
+          <p class="artist-name">
+            The Pubstitutes
+          </p>
+
         </article>
 
-        <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/zipshaft/paradise-of-vice?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/Paradise-of-Vice.jpg" alt="Paradise of Vice">
-          </a>
-          <h3 class="song-title">Paradise of Vice</h3>
-          <p class="artist-name">Zipshaft</p>
-        </article>
+
+        <!-- HAPPY MOUNT PARK POLICE -->
 
         <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/junkberry/venus-mantrap-2?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/Venus-Mantrap.jpg" alt="Venus Mantrap">
+
+          <a
+            href="https://distrokid.com/hyperfollow/themorecambebeach/happy-mount-park-police?ref=release"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/Happy-Mount-Park-Police.jpg"
+              alt="Happy Mount Park Police"
+            >
+
           </a>
-          <h3 class="song-title">Venus Mantrap</h3>
-          <p class="artist-name">JunkBerry</p>
+
+          <h3 class="song-title">
+            Happy Mount Park Police
+          </h3>
+
+          <p class="artist-name">
+            The Morecambe Beach
+          </p>
+
         </article>
 
-        <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/rustynailz/firebeast?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/Firebeast.jpg" alt="Firebeast">
-          </a>
-          <h3 class="song-title">Firebeast</h3>
-          <p class="artist-name">RUSTYNAILZ</p>
-        </article>
+
+        <!-- PARADISE OF VICE -->
 
         <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/derautobahnaggro/no-brake--keine-bremsen?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/No-Brake.jpg" alt="No Brake Keine Bremsen">
+
+          <a
+            href="https://distrokid.com/hyperfollow/zipshaft/paradise-of-vice?ref=release"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/Paradise-of-Vice.jpg"
+              alt="Paradise of Vice"
+            >
+
           </a>
-          <h3 class="song-title">No Brake // Keine Bremsen</h3>
-          <p class="artist-name">Der Autobahn Aggro</p>
+
+          <h3 class="song-title">
+            Paradise of Vice
+          </h3>
+
+          <p class="artist-name">
+            Zipshaft
+          </p>
+
         </article>
 
-        <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/themorecambebeach/holidays-in-the-rain?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/Holidays-In-The-Rain.jpg" alt="Holidays in the Rain">
-          </a>
-          <h3 class="song-title">Holidays in the Rain</h3>
-          <p class="artist-name">The Morecambe Beach</p>
-        </article>
+
+        <!-- VENUS MANTRAP -->
 
         <article class="release-card">
-          <a href="https://distrokid.com/hyperfollow/thepubstitutes/big-kick?ref=release" target="_blank" rel="noopener noreferrer">
-            <img src="images/Big-Kick.jpg" alt="Big Kick">
+
+          <a
+            href="https://distrokid.com/hyperfollow/junkberry/venus-mantrap-2?ref=release"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/Venus-Mantrap.jpg"
+              alt="Venus Mantrap"
+            >
+
           </a>
-          <h3 class="song-title">Big Kick</h3>
-          <p class="artist-name">The Pubstitutes</p>
+
+          <h3 class="song-title">
+            Venus Mantrap
+          </h3>
+
+          <p class="artist-name">
+            JunkBerry
+          </p>
+
         </article>
+
+
+        <!-- FIREBEAST -->
+
+        <article class="release-card">
+
+          <a
+            href="https://distrokid.com/hyperfollow/rustynailz/firebeast?ref=release"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/Firebeast.jpg"
+              alt="Firebeast"
+            >
+
+          </a>
+
+          <h3 class="song-title">
+            Firebeast
+          </h3>
+
+          <p class="artist-name">
+            RUSTYNAILZ
+          </p>
+
+        </article>
+
+
+        <!-- NO BRAKE -->
+
+        <article class="release-card">
+
+          <a
+            href="https://distrokid.com/hyperfollow/derautobahnaggro/no-brake--keine-bremsen?ref=release"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/No-Brake.jpg"
+              alt="No Brake Keine Bremsen"
+            >
+
+          </a>
+
+          <h3 class="song-title">
+            No Brake // Keine Bremsen
+          </h3>
+
+          <p class="artist-name">
+            Der Autobahn Aggro
+          </p>
+
+        </article>
+
+
+        <!-- HOLIDAYS IN THE RAIN -->
+
+        <article class="release-card">
+
+          <a
+            href="https://distrokid.com/hyperfollow/themorecambebeach/holidays-in-the-rain?ref=release"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/Holidays-In-The-Rain.jpg"
+              alt="Holidays in the Rain"
+            >
+
+          </a>
+
+          <h3 class="song-title">
+            Holidays in the Rain
+          </h3>
+
+          <p class="artist-name">
+            The Morecambe Beach
+          </p>
+
+        </article>
+
+
+        <!-- BIG KICK -->
+
+        <article class="release-card">
+
+          <a
+            href="https://distrokid.com/hyperfollow/thepubstitutes/big-kick?ref=release"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+
+            <img
+              src="images/Big-Kick.jpg"
+              alt="Big Kick"
+            >
+
+          </a>
+
+          <h3 class="song-title">
+            Big Kick
+          </h3>
+
+          <p class="artist-name">
+            The Pubstitutes
+          </p>
+
+        </article>
+
 
       </div>
 
     </section>
 
+
+    <!-- YOUTUBE -->
+
     <section class="youtube-section">
+
       <a
         class="youtube-link"
         href="https://www.youtube.com/@cheattherichrecords"
         target="_blank"
         rel="noopener noreferrer"
       >
+
         <span class="youtube-icon"></span>
+
         WATCH MORE ON YOUTUBE
+
       </a>
+
     </section>
 
+
+    <!-- CTR -->
+
     <section class="skull-section">
+
       <img
         class="skull-logo"
         src="images/CTR-SkullLogo.png"
         alt="Cheat the Rich Records Skull Logo"
       >
+
+
+      <div class="ctr-intro">
+
+        <p class="ctr-established">
+          CHEAT THE RICH RECORDS · EST. 2026
+        </p>
+
+        <p class="ctr-motto">
+          Built by humans. Powered by machines. Raised by punk.
+        </p>
+
+        <p class="ctr-world">
+          Where real people and fictional bands share the same world.
+        </p>
+
+        <p class="ctr-reality">
+          Some of us are real. Some of us aren't. The music is.
+        </p>
+
+      </div>
+
     </section>
 
+
   </main>
+
 
 </body>
 </html>
